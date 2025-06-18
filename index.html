@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice Game</title>
+  </head>
+  <body class="nunito">
+    <div class="container">
+      <div class="card player--0 active-player">
+        <div class="top">
+          <h2>PLAYER 1</h2>
+          <h1 class="score--0">1</h1>
+        </div>
+        <div class="bottom-container">
+          <div class="bottom">
+            <h4 class="current">CURRENT</h4>
+            <h2 class="current-score-0">0</h2>
+          </div>
+        </div>
+      </div>
+      <div class="card player--1">
+        <div class="top">
+          <h2>PLAYER 2</h2>
+          <h1 class="score--1">1</h1>
+        </div>
+        <div class="bottom-container">
+          <div class="bottom">
+            <h4 class="current">CURRENT</h4>
+            <h2 class="current-score-1">0</h2>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="top-btn">
+          <button class="normal-btn new-game">🔄️ NEW GAME</button>
+        </div>
+
+        <div class="bottom-btn">
+          <button class="normal-btn roll-dice">🎲 ROLL DICE</button>
+          <button class="hold-btn hold">📥 HOLD</button>
+        </div>
+      </div>
+      <div class="dice hidden">
+        <img src=".dice-1.png" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

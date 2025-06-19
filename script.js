@@ -64,7 +64,7 @@ rollDiceBtn.addEventListener("click", function () {
 });
 
 holdbtn.addEventListener("click", function () {
-  if (isPLaying) {
+  if (isPLaying && currentScore!=0) {
     scores[activePlayer] += currentScore;
     document.querySelector(`.score--${activePlayer}`).textContent =
       scores[activePlayer];
